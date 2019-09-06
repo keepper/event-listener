@@ -1,0 +1,34 @@
+{
+  "name": "keepper/event-listener",
+  "description": "Event system via listener definition",
+  "license": "free",
+  "authors": [
+    {
+      "name": "Andrew Kosov",
+      "email": "andrew.kosov@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Keepper\\EventListener\\": "src\\"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Keepper\\EventListener\\Tests\\": "tests\\"
+    }
+  },
+  "require": {
+    "php": "^7.2",
+    "psr/log": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.2",
+    "monolog/monolog": "^1.24",
+    "bramus/monolog-colored-line-formatter": "^3.0"
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit --columns max --color=always",
+    "cover": "./vendor/bin/phpunit --columns max --color=always --coverage-html ./coverage"
+  }
+}
